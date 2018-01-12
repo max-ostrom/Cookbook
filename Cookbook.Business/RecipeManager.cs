@@ -51,6 +51,58 @@ namespace Cookbook.Business
             }
         }
 
+
+
+
+        public bool tryAddComponent(Ingredient ingredient, double quantity, Unit unit)
+        {
+            throw new NotImplementedException();
+        }
+
+        public bool tryAddComponent(Component newComponent)
+        {
+            throw new NotImplementedException();
+        }
+
+
+
+
+        public bool tryAddIngredient(string name)
+        {
+            throw new NotImplementedException();
+        }
+
+        public bool tryAddIngredient(Ingredient newIngredient)
+        {
+            throw new NotImplementedException();
+        }
+
+
+
+
+        public bool tryAddRecipe(string name, IEnumerable<Component> components)
+        {
+            throw new NotImplementedException();
+        }
+
+        public bool tryAddRecipe(Recipe newRecipe)
+        {
+            throw new NotImplementedException();
+        }
+
+
+
+
+        public bool tryAddUnit(string singularName, string pluralName)
+        {
+            throw new NotImplementedException();
+        }
+
+        public bool tryAddUnit(Unit newUnit)
+        {
+            throw new NotImplementedException();
+        }
+
         public bool tryDeleteRecipe(string name)
         {
             throw new NotImplementedException();
