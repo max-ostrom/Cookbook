@@ -84,7 +84,7 @@
     </ProjectReference>
     <ProjectReference Include="..\Cookbook.Data.SqlServer.Odbc\Cookbook.Data.SqlServer.Odbc.csproj">
       <Project>{c37e9c0b-0df0-4db6-830c-30d08e02a036}</Project>
-      <Name>Cookbook.Data.Odbc</Name>
+      <Name>Cookbook.Data.SqlServer.Odbc</Name>
     </ProjectReference>
     <ProjectReference Include="..\Cookbook.Data.Xml.XmlDocument\Cookbook.Data.Xml.XmlDocument.csproj">
       <Project>{d9bd468b-c366-42eb-ba2a-9683800745f4}</Project>

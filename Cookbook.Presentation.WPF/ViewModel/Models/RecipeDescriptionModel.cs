@@ -18,10 +18,10 @@ namespace Cookbook.Presentation.WPF.ViewModel.Models
         private string CreateDescription()
         {
             StringBuilder stringBuilder = new StringBuilder();
-            stringBuilder.Append(model.Name);
+            stringBuilder.AppendLine("Recipe : " + model.Name);
             foreach (var item in model.Components)
             {
-                stringBuilder.AppendLine("\t" + item.Ingredient.Name + " " + item.Unit.PluralName);
+                stringBuilder.AppendLine("\t" + item.Ingredient.Name + " " + item.Quantity + " " + item.Unit.PluralName);
             }
             return stringBuilder.ToString();
         }

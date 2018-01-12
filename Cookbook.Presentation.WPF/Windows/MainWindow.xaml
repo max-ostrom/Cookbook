@@ -6,12 +6,12 @@
         xmlns:local="clr-namespace:Cookbook.Presentation.WPF"
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
-    <Grid>
+    <Grid Background="LightBlue">
         <Grid.ColumnDefinitions>
             <ColumnDefinition></ColumnDefinition>
-            <ColumnDefinition Width="0.5*"></ColumnDefinition>
+            <ColumnDefinition Width="0.8*"></ColumnDefinition>
         </Grid.ColumnDefinitions>
-        <ListBox ItemsSource="{Binding Recipes}" SelectionChanged="ListBox_SelectionChanged">
+        <ListBox ItemsSource="{Binding Recipes}" SelectionChanged="ListBox_SelectionChanged" Grid.Column="0" Background="LightBlue">
             <ListBox.ItemTemplate>
             <DataTemplate>
                 <StackPanel Orientation="Horizontal">
@@ -21,6 +21,6 @@
                 </DataTemplate>
             </ListBox.ItemTemplate>
         </ListBox>
-        <TextBlock Text="{Binding CurrentRecipe.Name}" Grid.Column="1"></TextBlock>
+        <TextBlock Text="{Binding CurrentRecipe.Name}" Grid.Column="1" Foreground="DarkRed"></TextBlock>
     </Grid>
 </Window>
