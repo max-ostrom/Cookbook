@@ -50,5 +50,10 @@ namespace Cookbook.Business
                 throw new DataSourceBusinessException(exception);
             }
         }
+
+        public bool tryDeleteRecipe(string name)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

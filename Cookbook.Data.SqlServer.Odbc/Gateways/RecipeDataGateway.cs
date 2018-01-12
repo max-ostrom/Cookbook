@@ -78,5 +78,10 @@ namespace Cookbook.Data.SqlServer.Odbc.Gateways
                 throw new DataException(exception);
             }
         }
+
+        public bool tryDeleterecipe(string name)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

@@ -96,5 +96,10 @@ namespace Cookbook.Data.Mocks.Gateways
         {
             return recipes.Value;
         }
+
+        public bool tryDeleterecipe(string name)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

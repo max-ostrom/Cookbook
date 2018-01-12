@@ -20,10 +20,17 @@ namespace Cookbook.Presentation.WPF
     /// </summary>
     public partial class MainWindow : Window
     {
+        private IMainWindowViewModel viewModel;
         public MainWindow(IMainWindowViewModel viewModel)
         {
             InitializeComponent();
+            this.viewModel = viewModel;
             DataContext = viewModel;
+        }
+
+        private void ListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            viewModel.setCurrentRecipe((sender as ListBox).SelectedItem);
         }
     }
 }

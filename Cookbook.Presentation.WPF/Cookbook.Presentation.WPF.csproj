@@ -36,9 +36,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Ninject, Version=3.2.0.0, Culture=neutral, PublicKeyToken=c7192dc5380945e7, processorArchitecture=MSIL">
-      <HintPath>..\packages\Ninject.3.2.2.0\lib\net45-full\Ninject.dll</HintPath>
-      <Private>True</Private>
+    <Reference Include="Ninject, Version=3.3.4.0, Culture=neutral, PublicKeyToken=c7192dc5380945e7, processorArchitecture=MSIL">
+      <HintPath>..\packages\Ninject.3.3.4\lib\net45\Ninject.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -60,9 +59,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="RecipeModel.cs" />
+    <Compile Include="ViewModel\Models\RecipeDescriptionModel.cs" />
+    <Compile Include="ViewModel\Models\RecipeModel.cs" />
     <Compile Include="WPFNinjectModule.cs" />
-    <Page Include="MainWindow.xaml">
+    <Page Include="Windows\MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -70,14 +70,14 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="IMainWindowViewModel.cs" />
-    <Compile Include="MainWindow.xaml.cs">
+    <Compile Include="ViewModel\IMainWindowViewModel.cs" />
+    <Compile Include="Windows\MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="MainWindowViewModel.cs" />
+    <Compile Include="ViewModel\MainWindowViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -114,9 +114,17 @@
       <Project>{e049f4c1-8b17-4033-a999-dc7487bce975}</Project>
       <Name>Cookbook.Business</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Cookbook.Data.Mocks\Cookbook.Data.Mocks.csproj">
+      <Project>{0587C125-783D-4057-BD5B-126C1CD34F21}</Project>
+      <Name>Cookbook.Data.Mocks</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Cookbook.Data.SqlServer.Odbc\Cookbook.Data.SqlServer.Odbc.csproj">
       <Project>{c37e9c0b-0df0-4db6-830c-30d08e02a036}</Project>
       <Name>Cookbook.Data.SqlServer.Odbc</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Cookbook.Data.Xml.XmlDocument\Cookbook.Data.Xml.XmlDocument.csproj">
+      <Project>{D9BD468B-C366-42EB-BA2A-9683800745F4}</Project>
+      <Name>Cookbook.Data.Xml.XmlDocument</Name>
     </ProjectReference>
     <ProjectReference Include="..\Cookbook.Data\Cookbook.Data.csproj">
       <Project>{299f2d05-166b-464b-b823-600f9fb66483}</Project>

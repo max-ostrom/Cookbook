@@ -64,5 +64,10 @@ namespace Cookbook.Data.Xml.XmlDocument.Gateways
                 throw new DataException(exception);
             }
         }
+
+        public bool tryDeleterecipe(string name)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

@@ -7,7 +7,11 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
     <Grid>
-        <ListBox ItemsSource="{Binding Recipes}">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition Width="0.5*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <ListBox ItemsSource="{Binding Recipes}" SelectionChanged="ListBox_SelectionChanged">
             <ListBox.ItemTemplate>
             <DataTemplate>
                 <StackPanel Orientation="Horizontal">
@@ -17,5 +21,6 @@
                 </DataTemplate>
             </ListBox.ItemTemplate>
         </ListBox>
+        <TextBlock Text="{Binding CurrentRecipe.Name}" Grid.Column="1"></TextBlock>
     </Grid>
 </Window>

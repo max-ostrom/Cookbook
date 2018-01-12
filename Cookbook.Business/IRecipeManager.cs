@@ -7,5 +7,6 @@ namespace Cookbook.Business
     {
         Recipe FindRecipe(string name);
         IEnumerable<Recipe> GetRecipes();
+        bool tryDeleteRecipe(string name);
     }
 }
