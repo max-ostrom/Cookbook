@@ -24,51 +24,51 @@
     <Recipes>
         <Recipe Id="1" Name="Mojito">
             <Components>
-                <Component Id="1" Quantity="6.0" IngredientId="1" UnitId="1"/>
-                <Component Id="2" Quantity="0.75" IngredientId="2" UnitId="2"/>
-                <Component Id="3" Quantity="0.75" IngredientId="3" UnitId="2"/>
-                <Component Id="4" Quantity="1.5" IngredientId="4" UnitId="2"/>
-                <Component Id="5" Quantity="1.5" IngredientId="5" UnitId="2"/>
+                <Component Id="1" Quantity="6,0" IngredientId="1" UnitId="1"/>
+                <Component Id="2" Quantity="0,75" IngredientId="2" UnitId="2"/>
+                <Component Id="3" Quantity="0,75" IngredientId="3" UnitId="2"/>
+                <Component Id="4" Quantity="1,5" IngredientId="4" UnitId="2"/>
+                <Component Id="5" Quantity="1,5" IngredientId="5" UnitId="2"/>
             </Components>
         </Recipe>
         <Recipe Id="2" Name="Manhattan">
             <Components>
-                <Component Id="6" Quantity="2.0" IngredientId="6" UnitId="2"/>
-                <Component Id="7" Quantity="1.0" IngredientId="7" UnitId="2"/>
-                <Component Id="8" Quantity="5.0" IngredientId="8" UnitId="3"/>
+                <Component Id="6" Quantity="2,0" IngredientId="6" UnitId="2"/>
+                <Component Id="7" Quantity="1,0" IngredientId="7" UnitId="2"/>
+                <Component Id="8" Quantity="5,0" IngredientId="8" UnitId="3"/>
             </Components>
         </Recipe>
         <Recipe Id="3" Name="Vieux Carré">
             <Components>
-                <Component Id="9" Quantity="4.0" IngredientId="9" UnitId="4"/>
-                <Component Id="10" Quantity="2.0" IngredientId="10" UnitId="5"/>
-                <Component Id="11" Quantity="0.75" IngredientId="7" UnitId="2"/>
-                <Component Id="12" Quantity="0.75" IngredientId="11" UnitId="2"/>
-                <Component Id="13" Quantity="0.75" IngredientId="12" UnitId="2"/>
+                <Component Id="9" Quantity="4,0" IngredientId="9" UnitId="4"/>
+                <Component Id="10" Quantity="2,0" IngredientId="10" UnitId="5"/>
+                <Component Id="11" Quantity="0,75" IngredientId="7" UnitId="2"/>
+                <Component Id="12" Quantity="0,75" IngredientId="11" UnitId="2"/>
+                <Component Id="13" Quantity="0,75" IngredientId="12" UnitId="2"/>
             </Components>
         </Recipe>
         <Recipe Id="4" Name="Rob Roy">
             <Components>
-                <Component Id="14" Quantity="2.0" IngredientId="13" UnitId="2"/>
-                <Component Id="15" Quantity="0.75" IngredientId="7" UnitId="2"/>
-                <Component Id="16" Quantity="3.0" IngredientId="8" UnitId="4"/>
+                <Component Id="14" Quantity="2,0" IngredientId="13" UnitId="2"/>
+                <Component Id="15" Quantity="0,75" IngredientId="7" UnitId="2"/>
+                <Component Id="16" Quantity="3,0" IngredientId="8" UnitId="4"/>
             </Components>
         </Recipe>
         <Recipe Id="5" Name="Blood &amp; Sand">
             <Components>
-                <Component Id="17" Quantity="0.75" IngredientId="14" UnitId="2"/>
-                <Component Id="18" Quantity="0.75" IngredientId="7" UnitId="2"/>
-                <Component Id="19" Quantity="0.75" IngredientId="15" UnitId="2"/>
-                <Component Id="20" Quantity="0.75" IngredientId="16" UnitId="2"/>
+                <Component Id="17" Quantity="0,75" IngredientId="14" UnitId="2"/>
+                <Component Id="18" Quantity="0,75" IngredientId="7" UnitId="2"/>
+                <Component Id="19" Quantity="0,75" IngredientId="15" UnitId="2"/>
+                <Component Id="20" Quantity="0,75" IngredientId="16" UnitId="2"/>
             </Components>
         </Recipe>
         <Recipe Id="6" Name="Gin Fizz">
             <Components>
-                <Component Id="21" Quantity="1.0" IngredientId="5" UnitId="2"/>
-                <Component Id="22" Quantity="2.0" IngredientId="17" UnitId="2"/>
-                <Component Id="23" Quantity="1.0" IngredientId="18" UnitId="2"/>
-                <Component Id="24" Quantity="0.75" IngredientId="2" UnitId="2"/>
-                <Component Id="25" Quantity="1.0" IngredientId="19" UnitId="1"/>
+                <Component Id="21" Quantity="1,0" IngredientId="5" UnitId="2"/>
+                <Component Id="22" Quantity="2,0" IngredientId="17" UnitId="2"/>
+                <Component Id="23" Quantity="1,0" IngredientId="18" UnitId="2"/>
+                <Component Id="24" Quantity="0,75" IngredientId="2" UnitId="2"/>
+                <Component Id="25" Quantity="1,0" IngredientId="19" UnitId="1"/>
             </Components>
         </Recipe>
     </Recipes>

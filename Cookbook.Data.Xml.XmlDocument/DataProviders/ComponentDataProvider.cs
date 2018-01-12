@@ -19,12 +19,15 @@ namespace Cookbook.Data.Xml.XmlDocument.DataProviders
 
         public Component ReadComponentFromNode(XmlNode componentNode, XmlDocument document)
         {
+            var _Id = int.Parse(componentNode.Attributes[ComponentElement.Id].Value.ToString());
+            var _IngredientId = int.Parse(componentNode.Attributes[ComponentElement.IngredientId].Value.ToString());
+            var _Quantity = double.Parse(componentNode.Attributes[ComponentElement.Quantity].Value.ToString());
+            var _UnitId = int.Parse(componentNode.Attributes[ComponentElement.UnitId].Value.ToString());
             var componentDto = new ComponentDto
-            {
-                Id = int.Parse(componentNode.Attributes[ComponentElement.Id].Value),
-                IngredientId = int.Parse(componentNode.Attributes[ComponentElement.IngredientId].Value),
-                Quantity = double.Parse(componentNode.Attributes[ComponentElement.Quantity].Value),
-                UnitId = int.Parse(componentNode.Attributes[ComponentElement.UnitId].Value)
+            {   Id = _Id,
+                IngredientId = _IngredientId,
+                Quantity = _Quantity,
+                UnitId = _UnitId
             };
 
             Ingredient ingredient = ingredientDataProvider.FindIngredientById(componentDto.IngredientId, document);
