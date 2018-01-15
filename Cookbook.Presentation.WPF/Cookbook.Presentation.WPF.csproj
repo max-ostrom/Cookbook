@@ -114,6 +114,10 @@
       <Project>{e049f4c1-8b17-4033-a999-dc7487bce975}</Project>
       <Name>Cookbook.Business</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Cookbook.Data.EntityFramework\Cookbook.Data.EntityFramework.csproj">
+      <Project>{f26b64af-bb6f-4f43-9d0f-c35740757a64}</Project>
+      <Name>Cookbook.Data.EntityFramework</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Cookbook.Data.Mocks\Cookbook.Data.Mocks.csproj">
       <Project>{0587C125-783D-4057-BD5B-126C1CD34F21}</Project>
       <Name>Cookbook.Data.Mocks</Name>

@@ -13,17 +13,19 @@ namespace Cookbook.Data.EntityFramework.DataProviders
     {
         public IEnumerable<Recipe> FindAllRecipes(RecipeDataGateway context)
         {
-            throw new NotImplementedException();
+            return context.Recipes;
         }
 
         public Recipe FindRecipeById(int recipeId, RecipeDataGateway context)
         {
-            throw new NotImplementedException();
+            IEnumerable<Recipe> names = from n in context.Recipes where (n.Id == recipeId) select n;
+            return names.ElementAt(0);
         }
 
         public Recipe FindRecipeByName(string recipeName, RecipeDataGateway context)
         {
-            throw new NotImplementedException();
+            IEnumerable<Recipe> names = from n in context.Recipes where (n.Name == recipeName) select n;
+            return names.ElementAt(0);
         }
     }
 }

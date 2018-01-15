@@ -13,6 +13,7 @@ using Cookbook.Data.SqlServer.Odbc;
 using Ninject;
 using Cookbook.Data.Mocks;
 using Cookbook.Data.Xml.XmlDocument;
+using Cookbook.Data.EntityFramework;
 
 namespace Cookbook.Presentation.WPF
 {
@@ -36,7 +37,7 @@ namespace Cookbook.Presentation.WPF
             var kernel = new StandardKernel
             (
                new BusinessNinjectModule(),
-               new MockDataNinjectModule(),
+               new EntityFrameworkNinjectModule(),
                new WPFNinjectModule()
             );
             return kernel;

@@ -7,6 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Cookbook.Business.Models;
 using Cookbook.Data.Gateways;
+using Cookbook.Data.EntityFramework.DataProviders;
 
 namespace Cookbook.Data.EntityFramework.Gateways
 {
@@ -16,15 +17,20 @@ namespace Cookbook.Data.EntityFramework.Gateways
         public DbSet<Ingredient> Ingredients { get; set; }
         public DbSet<Unit> Units { get; set; }
         public DbSet<Component> Components { get; set; }
+        private readonly IRecipeDataProvider recipeDataProvider;
+        public RecipeDataGateway(IRecipeDataProvider recipeDataProvider)
+        {
+            this.recipeDataProvider = recipeDataProvider;
+        }
 
         public Recipe FindRecipe(string name)
         {
-            throw new NotImplementedException();
+            return recipeDataProvider.FindRecipeByName(name, this);
         }
 
         public IEnumerable<Recipe> GetRecipes()
         {
-            throw new NotImplementedException();
+            return recipeDataProvider.FindAllRecipes(this);
         }
 
         public bool tryDeleterecipe(string name)
