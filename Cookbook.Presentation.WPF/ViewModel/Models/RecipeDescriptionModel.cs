@@ -21,7 +21,7 @@ namespace Cookbook.Presentation.WPF.ViewModel.Models
             stringBuilder.AppendLine("Recipe : " + model.Name);
             foreach (var item in model.Components)
             {
-                stringBuilder.AppendLine("\t" + item.Ingredient.Name + " " + item.Quantity + " " + item.Unit.PluralName);
+                stringBuilder.AppendLine("\t- " + item.Ingredient.Name + " " + item.Quantity + " " + item.Unit.PluralName);
             }
             return stringBuilder.ToString();
         }

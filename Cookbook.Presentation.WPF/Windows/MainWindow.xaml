@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Cookbook.Presentation.WPF"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="Recipe Manager" Height="350" Width="525" ResizeMode="CanResizeWithGrip">
     <Grid Background="LightBlue">
         <Grid.ColumnDefinitions>
             <ColumnDefinition></ColumnDefinition>

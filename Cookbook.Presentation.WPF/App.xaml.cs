@@ -36,7 +36,7 @@ namespace Cookbook.Presentation.WPF
             var kernel = new StandardKernel
             (
                new BusinessNinjectModule(),
-               new XmlDocumentNinjectModule(),
+               new MockDataNinjectModule(),
                new WPFNinjectModule()
             );
             return kernel;
