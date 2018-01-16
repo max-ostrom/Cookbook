@@ -44,6 +44,6 @@ namespace Cookbook.Presentation.WPF
             if (this.PropertyChanged != null)
                 this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
         }
-        public RecipeDescriptionModel CurrentRecipe { get => currentRecipe; set => setCurrentRecipe(value); }
+        public RecipeDescriptionModel CurrentRecipe { get { return currentRecipe; } set { setCurrentRecipe(value); } }
     }
 }
