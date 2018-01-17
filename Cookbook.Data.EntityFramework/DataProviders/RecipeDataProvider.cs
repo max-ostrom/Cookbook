@@ -11,6 +11,12 @@ namespace Cookbook.Data.EntityFramework.DataProviders
 {
     internal sealed class RecipeDataProvider : IRecipeDataProvider
     {
+        public void AddRecipe(Recipe recipe, RecipeDataGateway context)
+        {
+            context.Recipes.Add(recipe);
+            context.SaveChanges();
+        }
+
         public IEnumerable<Recipe> FindAllRecipes(RecipeDataGateway context)
         {
             return context.Recipes.Include(n => n.Components);
@@ -26,6 +32,22 @@ namespace Cookbook.Data.EntityFramework.DataProviders
         {
             IEnumerable<Recipe> names = from n in context.Recipes.Include(n => n.Components) where (n.Name == recipeName) select n;
             return names.ElementAt(0);
+        }
+
+        public bool tryDeleteRecipe(Recipe recipe, RecipeDataGateway context)
+        {
+            
+            var lastSize = context.Recipes.Count();
+            try
+            {
+                context.Recipes.Remove(recipe);
+                context.SaveChanges();
+            }
+            catch
+            {
+
+            }
+            return lastSize > context.Recipes.Count();
         }
     }
 }

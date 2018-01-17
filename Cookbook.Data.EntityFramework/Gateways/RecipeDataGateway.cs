@@ -17,10 +17,17 @@ namespace Cookbook.Data.EntityFramework.Gateways
         public DbSet<Ingredient> Ingredients { get; set; }
         public DbSet<Unit> Units { get; set; }
         public DbSet<Component> Components { get; set; }
+
         private readonly IRecipeDataProvider recipeDataProvider;
-        public RecipeDataGateway(IRecipeDataProvider recipeDataProvider)
+        private readonly IComponentDataProvider componentDataProvider;
+        private readonly IUnitDataProvider unitDataProvider;
+        private readonly IIngredientDataProvider ingredientDataProvider;
+        public RecipeDataGateway(IRecipeDataProvider recipeDataProvider, IComponentDataProvider componentDataProvider, IUnitDataProvider unitDataProvider, IIngredientDataProvider ingredientDataProvider)
         {
             this.recipeDataProvider = recipeDataProvider;
+            this.componentDataProvider = componentDataProvider;
+            this.unitDataProvider = unitDataProvider;
+            this.ingredientDataProvider = ingredientDataProvider;
         }
 
         public Recipe FindRecipe(string name)
@@ -34,6 +41,21 @@ namespace Cookbook.Data.EntityFramework.Gateways
         }
 
         public bool tryDeleterecipe(string name)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void addRecipe(Recipe recipe)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void addComponent(Component component)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void addIngredient(Ingredient ingredient)
         {
             throw new NotImplementedException();
         }

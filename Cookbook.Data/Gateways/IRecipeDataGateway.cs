@@ -8,6 +8,11 @@ namespace Cookbook.Data.Gateways
     {
         Recipe FindRecipe(string name);
         IEnumerable<Recipe> GetRecipes();
+
         bool tryDeleterecipe(string name);
+
+        void addRecipe(Recipe recipe);
+        void addComponent(Component component);
+        void addIngredient(Ingredient ingredient);
     }
 }

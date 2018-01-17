@@ -14,5 +14,8 @@ namespace Cookbook.Data.EntityFramework.DataProviders
         IEnumerable<Recipe> FindAllRecipes(RecipeDataGateway context);
         Recipe FindRecipeById(int recipeId, RecipeDataGateway context);
         Recipe FindRecipeByName(string recipeName, RecipeDataGateway context);
+
+        void AddRecipe(Recipe recipe, RecipeDataGateway context);
+        bool tryDeleteRecipe(Recipe recipe, RecipeDataGateway context);
     }
 }

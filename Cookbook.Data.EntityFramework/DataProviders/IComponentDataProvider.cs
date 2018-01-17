@@ -1,7 +1,7 @@
 ﻿using Cookbook.Data.EntityFramework.Gateways;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
+using Cookbook.Business.Models;
 using System.Data.Entity;
 using System.Linq;
 using System.Text;

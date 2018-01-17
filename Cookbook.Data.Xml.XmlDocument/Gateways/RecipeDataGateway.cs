@@ -69,5 +69,20 @@ namespace Cookbook.Data.Xml.XmlDocument.Gateways
         {
             throw new NotImplementedException();
         }
+
+        public void addRecipe(Recipe recipe)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void addComponent(Component component)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void addIngredient(Ingredient ingredient)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
