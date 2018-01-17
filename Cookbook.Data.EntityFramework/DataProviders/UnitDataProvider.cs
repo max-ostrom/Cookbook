@@ -13,7 +13,7 @@ namespace Cookbook.Data.EntityFramework.DataProviders
     {
         public Unit FindUnitById(int unitId, RecipeDataGateway context)
         {
-            IEnumerable<Unit> names = from n in context.Units where (n.Id == unitId) select n;
+            IEnumerable<Unit> names = from n in context.Units where (n.Id == unitId) select n.ToUnit();
             return names.ElementAt(0);
         }
     }

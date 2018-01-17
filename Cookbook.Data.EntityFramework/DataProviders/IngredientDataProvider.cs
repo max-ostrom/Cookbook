@@ -13,7 +13,7 @@ namespace Cookbook.Data.EntityFramework.DataProviders
     {
         public Ingredient FindIngredientById(int ingredientId, RecipeDataGateway context)
         {
-            IEnumerable<Ingredient> names = from n in context.Ingredients where (n.Id == ingredientId) select n;
+            IEnumerable<Ingredient> names = from n in context.Ingredients where (n.Id == ingredientId) select n.ToIngredient();
             return names.ElementAt(0);
         }
     }

@@ -8,15 +8,16 @@ using System.Threading.Tasks;
 using Cookbook.Business.Models;
 using Cookbook.Data.Gateways;
 using Cookbook.Data.EntityFramework.DataProviders;
+using Cookbook.Data.EntityFramework.Entities;
 
 namespace Cookbook.Data.EntityFramework.Gateways
 {
     internal sealed class RecipeDataGateway : DbContext, IRecipeDataGateway
     {
-        public DbSet<Recipe> Recipes { get; set; }
-        public DbSet<Ingredient> Ingredients { get; set; }
-        public DbSet<Unit> Units { get; set; }
-        public DbSet<Component> Components { get; set; }
+        public DbSet<RecipeEntity> Recipes { get; set; }
+        public DbSet<IngredientEntity> Ingredients { get; set; }
+        public DbSet<UnitEntity> Units { get; set; }
+        public DbSet<ComponentEntity> Components { get; set; }
 
         private readonly IRecipeDataProvider recipeDataProvider;
         private readonly IComponentDataProvider componentDataProvider;

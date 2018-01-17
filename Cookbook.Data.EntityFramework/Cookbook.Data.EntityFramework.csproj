@@ -59,6 +59,10 @@
     <Compile Include="DataProviders\IUnitDataProvider.cs" />
     <Compile Include="DataProviders\RecipeDataProvider.cs" />
     <Compile Include="DataProviders\UnitDataProvider.cs" />
+    <Compile Include="Entities\ComponentEntity.cs" />
+    <Compile Include="Entities\IngredientEntity.cs" />
+    <Compile Include="Entities\RecipeEntity.cs" />
+    <Compile Include="Entities\UnitEntity.cs" />
     <Compile Include="EntityFrameworkNinjectModule.cs" />
     <Compile Include="Gateways\RecipeDataGateway.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
